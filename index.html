@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js"></script>
+    <title>enigma do cellbit</title>
+</head>
+<body>
+
+    <header>
+        <h1>Enigma</h1>
+    </header>
+   
+        <form action="">
+        <section>
+        <input type="radio" name="tCifra" id="cCifra1" checked><label for="cCifra1">Base 64</label>
+        <input type="radio" name="tCifra" id="cCifra2"><label for="cCifra2">Cifra de Cesar</label>
+        </section>
+<section>
+        <textarea name="twrite" id="cwrite" cols="30" rows="10" placeholder="Digite a mensagem a ser codificada/decodificada"></textarea>
+</section>
+
+<section>
+    <label for="">incremento:</label>
+    <input type="number" name="tNumber" id="cNumber" min="1" max="25" >
+
+</section>
+<section>
+    <button>codificar</button>
+    <button>decodificar</button>
+</section>
+<section>
+    <label>Resultado:</label>
+    <br>
+    <textarea name="tResult" id="cResult" cols="30" rows="10"></textarea>
+</section>
+    
+
+        </form>
+    
+    
+</body>
+</html>
