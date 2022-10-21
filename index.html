@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Enigma</title>
+</head>
+<body>
+
+    <header>
+       
+    </header>
+   
+        <form action="">
+            <h1>Enigma</h1>
+        <section>
+        <input type="radio" name="tCifra" id="cCifra1" onclick="hideinc()"><label for="cCifra1"  >Base 64</label>
+        <input type="radio" name="tCifra" id="cCifra2" onclick="hideinc()"><label for="cCifra2">Cifra de Cesar</label>
+        </section>
+<section>
+        <textarea name="tWrite" id="cWrite" cols="70" rows="15" placeholder="Digite a mensagem a ser codificada/decodificada"></textarea>
+</section>
+
+<section id="increment">
+    <label for="">incremento:</label>
+    <input type="number" name="tNumber" id="cNumber" min="1" max="25" value="0">
+
+</section>
+<section>
+    <input type="button" value="codificador" onclick="base64C(),cesarC()" class="btn">
+    <input type="button" value="decodificador" onclick="base64D(),cesarD()" class="btn">
+   
+</section>
+<section class="result">
+    <label>Resultado:</label>
+    <br>
+    <textarea name="tResult" id="cResult" cols="70" rows="15" ></textarea>
+</section>
+    
+
+        </form>
+    
+    
+</body>
+</html>
